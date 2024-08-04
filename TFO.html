@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="faces.css">
+    <link rel="icon" href="qualia.ico">
+    <title>Quar</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                <div class="sidenav">
+                    <a href="index.html">About.lore</a>
+                    <a href="testament.html">Testament.lore</a>
+                    <button class="dropdown-btn">Names/</button>
+
+                    <div class="dropdown-container">
+                        <a href="llea.html">King Llea</a>
+                        <a href="TFO.html">Trent Quar</a>
+                        <a href="Guil.html">The Witch</a>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="main" style="padding-top:15%; padding-bottom:15%;">
+                    <h2>Trent Quar</h2>
+                    <p>Trent Quar, a god born from the death of King Llea.</p>
+                    <p>He is a god of Freedom, of Power, and of Combat.</p>
+                    <p>He is not a good man. He took many of the King's Vices, and little of his Virtues.</p>
+                    <p>He was banished to the Cradle for his many crimes, and is watched over by one of my people, the Witch.</p>
+                </div>
+            </th>
+        </tr>
+        <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+        </script>
+    </table>
+</body>
+</html> 

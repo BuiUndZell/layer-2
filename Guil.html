@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="faces.css">
+    <link rel="icon" href="qualia.ico">
+    <title>Witch</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                <div class="sidenav">
+                    <a href="index.html">About.lore</a>
+                    <a href="testament.html">Testament.lore</a>
+                    <button class="dropdown-btn">Names/</button>
+
+                    <div class="dropdown-container">
+                        <a href="llea.html">King Llea</a>
+                        <a href="TFO.html">Trent Quar</a>
+                        <a href="Guil.html">The Witch</a>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="main" style="padding-top:10%; padding-bottom:10%">
+                    <h2>The Witch</h2>
+                    <p>The Witch was young when we gave her that horrible task. She was sent to the Cradle, to watch over Trent Quar's Isolation.</p>
+                    <p>She has taken the form of a Human, though age cannot touch her. She is alone, unable to access most of her power.</p>
+                    <p>She leads them. She does so much to help the poor mortals, even as she watches them wither in her hands.</p>
+                    <p>I hear her cries, wishing that she could leave. Wishing that she could be reunited with the rest of her people.</p>
+                    <p>I cry with her.</p>
+                </div>
+            </th>
+        </tr>
+    </table>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

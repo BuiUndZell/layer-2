@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="faces.css">
+    <link rel="icon" href="qualia.ico">
+    <title>King Llea</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                <div class="sidenav">
+                    <a href="index.html">About.lore</a>
+                    <a href="testament.html">Testament.lore</a>
+                    <button class="dropdown-btn">Names/</button>
+
+                    <div class="dropdown-container">
+                        <a href="llea.html">King Llea</a>
+                        <a href="TFO.html">Trent Quar</a>
+                        <a href="Guil.html">The Witch</a>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="main">
+                    <h2>His Highness King Llea</h2>
+                    <p>The King of All Creation, and the most powerful force known to reality.</p>
+                    <p>I served King Llea, while he lived. And I worked to solve the mystery of his death.</p>
+                    <p>There are few men I would follow the same way I followed him. Even fewer gods.</p>
+                    <p>I miss him, even now. I can only imagine how horrible it will be at the end.</p>
+                </div>
+            </th>
+        </tr>
+        <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+        </script>
+    </table>
+</body>
+</html>
